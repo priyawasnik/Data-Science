@@ -1,0 +1,53 @@
+Python Basics: Variables and Tuples
+1. Variables in Python
+A variable is a named container that stores data.
+Think of it like a label stuck on a box — the label is the variable name, and the box contains the value.
+
+Rules for Variable Names
+Must start with a letter or underscore (_)
+Cannot start with a number
+Can contain letters, numbers, and underscores
+Case-sensitive (Age and age are different)
+Examples
+# Creating variables
+name = "Pradip"        # string
+age = 25               # integer
+height = 5.9           # float
+is_trainer = True      # boolean
+
+# Printing variables
+print(name, age, height, is_trainer)
+Tuples in Python
+Definition
+A tuple is an ordered collection of elements in Python. It is similar to a list but has one key difference: tuples are immutable, meaning their contents cannot be changed after creation.
+
+Characteristics
+Defined using parentheses ()
+Can contain elements of different data types
+Elements are indexed, starting from 0
+Immutable: once created, elements cannot be added, removed, or modified
+Can be nested inside other tuples or collections
+Syntax
+# Creating a tuple
+example_tuple = (1, "Data", 3.14)
+
+# Accessing elements
+print(example_tuple[0])   # Output: 1
+print(example_tuple[1])   # Output: "Data"
+Tuple Methods in Python
+Introduction
+Tuples are immutable, so they have fewer methods compared to lists. The available methods focus on querying data rather than modifying it.
+
+1. count()
+Returns the number of times a specified value appears in the tuple.
+
+Example
+numbers = (1, 2, 3, 2, 4, 2)
+print(numbers.count(2))
+Tuple Method: index()
+Definition
+The index() method in Python returns the position (index) of the first occurrence of a specified value in a tuple.
+If the value is not present, Python raises a ValueError.
+
+Syntax
+tuple_name.index(value)
